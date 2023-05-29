@@ -64,6 +64,9 @@ int print_char(va_list types, char buffer[],
 int print_string(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
+int write_unsgnd(int is_negative, int ind,char buffer[], 
+		int flags, int width, int precision, int size);
+
 /* Functions to print num */
 int print_hexa(va_list types, char map_to[],
 char buffer[], int flags, char flag_ch, int width, int precision, int size);

@@ -4,7 +4,7 @@
  * print_unsigned - Prints an unsigned number
  * @types: Lists arguments
  * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
+ * @flags:  Calculation of active flags
  * @width: get width
  * @precision: Specifies precision
  * @size: Size specifier
@@ -31,7 +31,7 @@ int print_unsigned(va_list types, char buffer[],
 
 	k++;
 
-	return (write_unsgnd(0, k, buffer, flags, width, precision, size));
+	return write_unsgnd(0, k, buffer, flags, width, precision, size);
 }
 
 /**
